@@ -1,0 +1,273 @@
+body{
+    background-color: #f4f4f4;
+}
+header, section#accueil {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+.acc{
+    color: #666;
+}
+h1 {
+    margin: 0;
+    flex-grow: 1;
+}
+h2{
+    margin-top: 0px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul li {
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+section#accueil {
+   
+    background-color: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 100%;
+    margin-bottom: 50px;
+    margin: auto;
+    
+}
+
+h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+p {
+    margin-top: 20px;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #666;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+section#applications {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+
+.contai {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:  wrap; 
+    justify-content: space-between; 
+}
+
+.app {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 40px;
+    width: calc(50% - 20px); 
+    box-sizing: border-box; 
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+.app:hover {
+    transform: scale(1.05); 
+}
+
+.app h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.app p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.app a {
+    display: inline-block;
+    background-color:#666;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+
+.app a:hover {
+    background-color: #0056b3;
+}
+footer#contact {
+    background-color: #333; 
+    color: #fff; 
+    padding: 60px 0;
+    text-align: center;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #f4f4f4;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+
+a:hover {
+    text-decoration: underline; 
+}
+
+.soc {
+    margin-top: 20px;
+}
+
+.soc a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.soc img {
+    height: 50px;
+    width: 50px;
+}
+.section{
+    opacity: 0;
+}
+.visible{
+    opacity: 1;
+}
+@media only screen and (max-width: 768px) {
+    header {
+        top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 5px;
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+    }
+
+    ul {
+        margin-top: 10px;
+    }
+
+    ul li {
+        display: inline;
+        position: relative;
+        gap: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    ul li:last-child {
+        margin-right: 0;
+    }
+
+    section#accueil {
+        width: 90%;
+        padding: 0 20px;
+        right: 5px;
+        
+    }
+    .acc {
+        margin-bottom: 30px;
+    }
+    h2 {
+        margin-top: 50px;
+        font-size: 28px;
+    }
+    .s{
+        margin-top: 0px;
+    }
+    p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+    .contai {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .app {
+        width: 100%; 
+    }
+    footer{
+    .container {
+        padding: 0 20px; 
+    }
+}
+}
